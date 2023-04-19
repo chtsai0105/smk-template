@@ -40,13 +40,13 @@ Clone the repo to your computer.
 Clone by the following command if you're using public key for github connection.
 
 ```
-git clone --recurse-submodules git@github.com:chtsai0105/metagenome-snakemake.git
+git clone --recurse-submodules {github repo ssh link}
 ```
 
 Or clone by https link.
 
 ```
-git clone --recurse-submodules https://github.com/chtsai0105/metagenome-snakemake.git
+git clone --recurse-submodules {github repo https link}
 ```
 
 Otherwise, clone the submodules as a second step by:
@@ -59,13 +59,13 @@ Next, go to the directory by `cd metagenome-snakemake`. It should contains the f
 
 File                    |Description
 ------------------------|---------------------------------
-`snakefile`             |Define the rules for the workflow.
+`snakefile`             |The workflow entry. Define the targets for the workflow.
 `config.yaml`           |Define the path for data and metadata.
 `sample.csv`            |The metadata for samples. Define the names of the samples and the fastq files.
 `run_snakemake.bash`    |The bash script for running the workflow.
 `data/`                 |The folder for the data and the workflow outputs.
 `envs/`                 |The folder that contains the yaml config for conda environments.
-`rules/`                |The folder that contains the submodules for the main workflow.
+`rules/`                |The folder that contains the rules/submodules of the workflow.
 `slurm/`                |The folder that contains the slurm profile for stajichlab partition@UCR hpcc.
 
 ## Define the path
