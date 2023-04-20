@@ -6,8 +6,8 @@
 [contributors-url]: https://github.com/chtsai0105/smk-template/graphs/contributors
 [issues-shield]: https://img.shields.io/github/issues/chtsai0105/smk-template
 [issues-url]: https://github.com/chtsai0105/smk-template/issues
-[license-shield]: https://img.shields.io/github/license/chtsai0105/smk-template
-[license-url]: https://github.com/chtsai0105/smk-template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/chtsai0105/smk-template?label=license
+[license-url]: https://github.com/chtsai0105/smk-template/blob/master/LICENSE.md
 
 # {Snakemake workflow template}
 <img align="right" width="120" height="120" src="https://avatars.githubusercontent.com/u/33450111?s=200&v=4">
