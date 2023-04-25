@@ -28,3 +28,9 @@ jobs:
         run: |
           repo=$(basename `git rev-parse --show-toplevel`)
           sed "s/{repo_name}/$repo/g" README.md
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "master"
