@@ -2,12 +2,12 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-[contributors-shield]: https://img.shields.io/github/contributors/chtsai0105/{repo_name}
-[contributors-url]: https://github.com/chtsai0105/{repo_name}/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/chtsai0105/{repo_name}
-[issues-url]: https://github.com/chtsai0105/{repo_name}/issues
-[license-shield]: https://img.shields.io/github/license/chtsai0105/{repo_name}?label=license
-[license-url]: https://github.com/chtsai0105/{repo_name}/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/chtsai0105/smk-template
+[contributors-url]: https://github.com/chtsai0105/smk-template/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/chtsai0105/smk-template
+[issues-url]: https://github.com/chtsai0105/smk-template/issues
+[license-shield]: https://img.shields.io/github/license/chtsai0105/smk-template?label=license
+[license-url]: https://github.com/chtsai0105/smk-template/blob/master/LICENSE
 
 # {Snakemake workflow template}
 <img align="right" width="120" height="120" src="https://avatars.githubusercontent.com/u/33450111?s=200&v=4">
@@ -72,22 +72,22 @@ Clone the repo to your computer.
 Clone by the following command if you're using public key for github connection.
 
 ```
-git clone --recurse-submodules git@github.com:chtsai0105/{repo_name}.git
+git clone --recurse-submodules git@github.com:chtsai0105/smk-template.git
 ```
 
 Or clone by https link.
 
 ```
-git clone --recurse-submodules https://github.com/chtsai0105/{repo_name}.git
+git clone --recurse-submodules https://github.com/chtsai0105/smk-template.git
 ```
 
 Otherwise, clone the submodules as a second step by:
 ```
-cd {repo_name}
+cd smk-template
 git submodule update --init
 ```
 
-Next, go to the directory by `cd {repo_name}`. It should contains the following files:
+Next, go to the directory by `cd smk-template`. It should contains the following files:
 
 File    |Description
 -|-
