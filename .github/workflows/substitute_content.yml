@@ -22,12 +22,12 @@ jobs:
       - name: Subtitute_README
         run: |
           repo=$(basename `git rev-parse --show-toplevel`)
-          sed "s/smk-template/$repo/g" README.md
+          sed -i "s/smk-template/$repo/g" README.md
 
       - name: Subtitute_LICENSE
         run: |
           year=`date +"%Y"`
-          sed "s/2023/$year/g" LICENSE
+          sed -i "s/2023/$year/g" LICENSE
 
       - name: Commit files
         run: |
