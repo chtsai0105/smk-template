@@ -87,18 +87,21 @@ cd smk-template
 git submodule update --init
 ```
 
-Next, go to the directory by `cd smk-template`. It should contains the following files:
+Next, go to the directory by `cd smk-template`. The entire folder structure and its details are listed below:
 
-File    |Description
--|-
-[snakefile](snakefile)  |The workflow entry. Define the targets for the workflow.
-[config.yaml](config.yaml)  |Define the path for data and metadata.
-[sample.csv](sample.csv)    |The metadata for samples. Define the names of the samples and the fastq files.
-[run_snakemake.bash](run_snakemake.bash)    |The bash script for running the workflow.
-[data/](data)   |The folder for the data and the workflow outputs.
-[envs/](envs)   |The folder that contains the yaml config for conda environments.
-[rules/](rules) |The folder that contains the rules/submodules of the workflow.
-[slurm/](https://github.com/chtsai0105/snakemake_profile-slurm/tree/master) |The folder that contains the slurm profile for stajichlab partition@UCR hpcc.
+.
+    ├── config/
+    │   ├── config.yaml             # Define the path for data and metadata.
+    │   ├── sample.csv              # The metadata for samples. Define the names of the samples and the fastq files.
+    ├── workflow/
+    │   ├── rules/                  # The folder that contains the rules/submodules of the workflow.   
+    │   ├── envs/                   # The folder that contains the yaml config for conda environments.
+    │   ├── wrappers/               # The folder that contains the self-defined wrappers.
+    │   ├── snakefile               # The workflow entrypoint. Define the targets for the workflow.
+    ├── data/                       # The folder for the data and the workflow outputs.
+    │   ├── fastq/                  # The folder that the initial fastq files should be placed.
+    ├── slurm/                      # The folder that contains the slurm profile for stajichlab partition@UCR hpcc.
+    └── run_snakemake.bash          # The bash script for running the workflow.
 
 <br>
 
